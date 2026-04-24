@@ -23,7 +23,7 @@ export default function Login(){
     const navigate = useNavigate();
     function handleEnter() {
         navigate("/MoneySnapshot");
-    }
+    } 
 
     return(
         <div className="login-page">

@@ -10,7 +10,6 @@ const ABSALogo = OnBoardingLogo;
 import "../cssFiles/OnBoarding.css";
 
 
-
 export default function OnBoarding(){
 
 
