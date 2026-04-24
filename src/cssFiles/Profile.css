@@ -1,0 +1,11 @@
+.profile-page{
+    background-color: #48426D;
+    min-height: 100vh;
+}
+
+.profile-content{
+   /*layout*/
+    width: 72%;
+    float: right;
+    background-color: pink;
+}

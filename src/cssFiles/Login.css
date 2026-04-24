@@ -1,0 +1,56 @@
+.login-page{
+    background-color: #48426D;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.login-content{
+    background-color: #312C51;
+    justify-content: center; 
+    align-items: center;
+}
+
+.main-logo{
+    height: 120px;
+    width: auto;
+}
+
+.login-username{
+    display: flex;
+    flex-direction: row;
+    max-height: 50px; 
+    max-width: 50;  
+    background-color: yellow; 
+    padding: 30px;
+}
+
+.username-icon{
+    object-fit: contain;
+    margin: 0;
+    background-color: black;
+    padding: 5px;
+
+}
+
+.username-input{
+    margin: 0;
+    background-color: aquamarine;
+}
+
+
+.login-password{
+    display: flex;
+    flex-direction: row;
+    max-height: 50px;
+    margin: 0 
+
+}
+
+.password-icon{
+    object-fit:cover;
+}

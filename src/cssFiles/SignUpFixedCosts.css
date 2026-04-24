@@ -1,0 +1,15 @@
+/*the look of each expense block*/
+.expense-block{
+    border: "1px solid #ccc";
+    border-radius: "8px";
+    padding: "16px";
+    margin-bottom: "16px"             
+}
+
+.expense-block {
+    background-color: red;
+}
+
+.error-text{
+    color: red;
+}

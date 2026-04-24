@@ -1,0 +1,94 @@
+.strategy-tracks-page {
+    min-height: 110vh;
+    background-color: #48426D;
+}
+
+.strategy-tracks-content {
+
+    /*layout*/
+    display: flex;
+    flex-direction: column;
+
+    width: 72%;
+    float: right;
+    padding: 30px 15px 0 0;
+    gap: 24px;
+
+}
+
+.strategy-tracks-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 185px;
+}
+
+.strategy-tracks-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.strategy-tracks-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid #F0C38E;
+    object-fit: cover;
+}
+
+.strategy-tracks-username {
+    font-size: 0.8rem;
+    color: #F1AA9B;
+    margin: 0;
+}
+
+.strategy-tracks-title h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.strategy-tracks-info-tab {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px 20px;
+}
+
+.strategy-tracks-info-tab p {
+    color: #c9c4e0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.strategy-tracks-main {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.track-builder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.track-builder-button {
+    background-color: #F0C38E;
+    color: #312C51;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.track-builder-button:hover {
+    background-color: #F1AA9B;
+}

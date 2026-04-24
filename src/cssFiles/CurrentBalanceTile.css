@@ -1,0 +1,30 @@
+.balance-container {
+    border-radius: 16px;
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 200px;
+
+}
+
+.balance-label {
+    font-size: 0.75rem;
+    color: #c9c4e0;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.balance-amount {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #F0C38E;
+    margin: 0 0 6px;
+}
+
+.balance-note {
+    font-size: 0.75rem;
+    color: #c9c4e0;
+    margin: 0;
+}

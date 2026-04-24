@@ -1,0 +1,11 @@
+.simulation-studio-page{
+   background-color: #48426D;
+   min-height: 100vh;
+}
+
+.simulation-studio-content{
+    /*layout*/
+    width: 72%;
+    float: right;
+    background-color: pink;
+}

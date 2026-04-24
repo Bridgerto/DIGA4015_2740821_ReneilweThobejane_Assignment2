@@ -1,0 +1,78 @@
+.onboarding-page{
+    background-color: #48426D;
+    /*min-height: 100vh;*/
+    min-width: 200vh;
+
+    min-height: 100vh;
+
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+}
+
+.onboarding-content{
+    background-color: #312C51;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;        
+    max-width: 1000px;  
+
+    padding: 60px 0 50px 0;
+}
+
+.onboarding-icons{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 180px;
+    transform: scale(2.3);
+    padding: 0 0 20px 0;
+}
+
+.onboarding-icons {
+    font-size: 0.8rem;
+    margin: 0 0 20px 0;
+}
+
+.onboarding-icons h1, .onboarding-icons p {
+    margin: 9px;
+}
+
+.onboarding-icons h1{
+    color: #F0C38E;
+}
+
+.onboarding-icons p{
+    color: #F1AA9B;
+}
+
+.onboarding-buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 0 42% 0 42%;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+
+.onboarding-login{
+    padding: 7px 0px;
+    border-radius: 5px;
+    border-color:#312C51;
+    background-color: #48426D;
+    color: #F0C38E;
+}
+
+.onboarding-signup{
+    padding: 7px 0px;
+    border-radius: 5px;
+    border-color:#48426D;
+    background-color: #F1AA9B;
+    color:#312C51;
+}

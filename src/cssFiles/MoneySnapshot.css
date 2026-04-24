@@ -1,0 +1,37 @@
+.snapshot-page {
+    background-color: #48426D;
+    min-height: 100vh;
+
+    /*display: flex;*/
+
+}
+
+.snapshot-content {
+    /*layout*/
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 72%;
+    float: right;
+    /*flex: 1;*/
+    
+
+    /*spacing*/
+    padding: 10px 15px 0 0px;
+
+
+    /*colouring*/
+    background-color: lightblue;
+}
+
+.snapshot-top{
+    display: flex;
+    gap: 80px;
+
+}
+
+.snapshot-middle {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
