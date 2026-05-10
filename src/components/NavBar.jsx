@@ -11,7 +11,7 @@ import "../cssFiles/NavBar.css";
 
 export default function NavBar(){
 
-
+ 
     return (
     <nav className="side-bar">
         <img src={Logo} alt="NavBar ABSA Logo" className="logo"/>
