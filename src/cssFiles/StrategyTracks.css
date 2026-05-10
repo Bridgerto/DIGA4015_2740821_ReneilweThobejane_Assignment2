@@ -1,5 +1,5 @@
 .strategy-tracks-page {
-    min-height: 110vh;
+    min-height: 100vh;
     background-color: #48426D;
 }
 
@@ -9,9 +9,9 @@
     display: flex;
     flex-direction: column;
 
-    width: 72%;
+    width: 76%;
     float: right;
-    padding: 30px 15px 0 0;
+    padding: 30px 25px 0 0;
     gap: 24px;
 
 }

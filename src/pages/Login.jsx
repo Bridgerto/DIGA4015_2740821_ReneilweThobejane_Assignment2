@@ -30,7 +30,7 @@ export default function Login(){
 
             <div className="login-content">
                 <img src={Logo} alt="ABSA Main Logo" className="main-logo" />
-                <h1>Welcome</h1>
+                <h1>Welcome user!</h1>
 
                 <div className="login-username">
                     <img src={Icon1} alt="Username Icon" className="username-icon"/>
@@ -55,7 +55,7 @@ export default function Login(){
                     />
                 </div>
               
-                <button onClick={handleEnter}>Enter</button>
+                <button onClick={handleEnter}>ENTER</button>
             </div>
 
         </div>

@@ -2,8 +2,6 @@
     background-color: #48426D;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-
     justify-content: center; 
     align-items: center;
 }
@@ -11,46 +9,69 @@
 
 .login-content{
     background-color: #312C51;
-    justify-content: center; 
+    width: 50%;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 25px;
+    border-radius: 8px;
 }
 
 .main-logo{
-    height: 120px;
-    width: auto;
+    height: 200px;
 }
 
-.login-username{
+.login-content h1 {
+    color: #F0C38E;
+    align-items: center;
+}
+
+
+.login-username, .login-password{
     display: flex;
-    flex-direction: row;
-    max-height: 50px; 
-    max-width: 50;  
-    background-color: yellow; 
-    padding: 30px;
+    width: 400px;  
+    height: 55px; 
 }
 
-.username-icon{
+.username-icon, .password-icon{
+    width: 60px;
+    height: 60px;
+    background-color: #4B4673;
+    padding: 0px;
     object-fit: contain;
-    margin: 0;
-    background-color: black;
-    padding: 5px;
+
 
 }
 
-.username-input{
-    margin: 0;
-    background-color: aquamarine;
+.username-input, .password-input{
+    flex:1;
+    height: 60px;
+    border: none;
+    object-fit: contain;
+    padding: 0 15px;
+    font-size: 16px;
+    background-color: #e1defe16;
+    color: #F1AA9B;
 }
 
-
-.login-password{
-    display: flex;
-    flex-direction: row;
-    max-height: 50px;
-    margin: 0 
-
+.username-input::placeholder{
+    color: white;
+;
 }
 
-.password-icon{
-    object-fit:cover;
+.password-input::placeholder{
+    color: white;
+}
+
+button{
+    margin-top: 20px;
+    width: 220px;
+    height: 55px;
+    background-color: #4B4673;
+    color: #F0C38E;
+    font-size: 0.9rem;
+    border-color: #312C51;
+    border-radius: 12px;
+    cursor: pointer;
 }
