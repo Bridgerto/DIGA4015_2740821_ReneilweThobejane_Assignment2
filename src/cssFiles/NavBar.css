@@ -21,8 +21,8 @@
 }
 
 .logo {
-  width: 100px;
-  margin: 90px auto 50px;
+  width: 90px;
+  margin: 90px auto 80px;
 }
 
 .nav-links {
@@ -36,8 +36,16 @@
 .nav-bottom {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
+}
+
+.nav-item.active {
+  background: #F0C38E;
+  color: #312C51;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+
 }
 
 .nav-item {
@@ -46,16 +54,12 @@
   font-size: 16px;
   border-radius: 25px;
   transition: all 0.3s ease;
+  padding: 5px 0 5px 0;
 }
 
 .nav-item:hover {
   background: #48426D;
-  padding: 5px 0 5px 0;
+  padding: 5px 10px 5px 10px;
+
 }
 
-.nav-item.active {
-  background: #F0C38E;
-  color: #312C51;
-  text-align: center;
-  padding: 5px 0 5px 0;
-}

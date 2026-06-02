@@ -10,7 +10,7 @@ const Logo = NavBarABSALogo;
 import "../cssFiles/NavBar.css";
 
 export default function NavBar(){
-    const navLocation = useLocation;
+    const location = useLocation();
 
  
     return (
@@ -18,17 +18,31 @@ export default function NavBar(){
         <img src={Logo} alt="NavBar ABSA Logo" className="logo"/>
         
         <div className="nav-links"> 
-            <Link to ="/MoneySnapshot" className="nav-item active" > Money Snapshot</Link>
-            <Link to ="/StrategyTracks" className="nav-item"> Strategy Tracks</Link>
-            <Link to ="/SimulationStudio" className="nav-item"> Simulation Studio</Link>
+            <Link 
+                to ="/MoneySnapshot" className={`nav-item ${location.pathname === "/MoneySnapshot" ? "active" : ""}`} > Money Snapshot
+            </Link>
+
+
+            <Link 
+                to ="/StrategyTracks" className={`nav-item ${location.pathname === 
+                "/StrategyTracks" ? "active" : ""}`}> Strategy Tracks
+            </Link>
+
+            <Link 
+                to ="/SimulationStudio" className={`nav-item ${location.pathname === 
+                "/SimulationStudio" ? "active" : ""}`}> Simulation Studio
+            </Link>
         </div>
 
         <div className="nav-bottom">
-            <Link to ="/Profile" className="nav-item"> Profile </Link>
-            <Link to ="/" className="nav-item"> Logout </Link>
+            <Link 
+                to ="/Profile" className={`nav-item ${location.pathname ===
+                 "/Profile" ? "active" : ""}`}> Profile 
+            </Link>
+
+            <Link to ="/" className="nav-item" > Logout </Link>
         </div>
     </nav>
     );
 
-    // style = {{fontweight: location.pathname === "/MoneySnapshot" ? "bold" ? "normal"}}
 }

@@ -19,7 +19,8 @@ import StrategyTracks from './pages/StrategyTracks';
 import NavBar from './components/NavBar';
 
 //STYLING
-//import './App.css'
+//
+import './App.css'
 
 
 
