@@ -1,21 +1,25 @@
 .tracker-container {
-    display: flex;
+    display: flex; 
+    flex-direction: column;
     gap: 24px;
     flex: 1;
+    background-color: #312C51;
+    border-radius: 16px;
+
+
 }
 
 .tracker-section {
     flex: 1;
-    background-color: #ffffff;
     border-radius: 16px;
     padding: 20px 24px;
-    border: 0.5px solid #e0e0e0;
+    border: 0.5px solid #555075;
 }
 
 .tracker-title {
     font-size: 1rem;
     font-weight: 500;
-    color: #312C51;
+    color: white;
     margin: 0 0 16px;
 }
 
@@ -34,37 +38,67 @@
 }
 
 .tracker-tile.confirmed {
-    background-color: #f0f0f0;
+    background-color: #F0C38E;
+    margin-bottom: 20px;
 }
 
-.tracker-tile.upcoming {
-    background-color: #fdf3ec;
+.tracker-tile.confirmed .tracker-category{
+      font-size: 1.0rem;
+      font-weight: 500;
+      color: #312C51;
+      margin: 0;   
 }
 
-.tracker-category {
-    font-size: 0.9rem;
+.tracker-tile.confirmed .tracker-merchant{
+      font-size: 0.7rem;
+      color: #312C51;
+      margin: 0;   
+}
+
+.tracker-tile.confirmed .tracker-amount {
+    font-size: 1.0rem;
     font-weight: 500;
     color: #312C51;
+    text-align: right;
     margin: 0;
 }
 
-.tracker-merchant {
+.tracker-tile.confirmed .tracker-date {
+    font-size: 0.7rem;
+    color: #312C51;
+    margin: 2px 0 0;
+    text-align: right;
+}
+
+.tracker-tile.upcoming {
+    background-color: #48426D;
+}
+
+
+.tracker-tile.upcoming  .tracker-category {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #c9c4e0;
+    margin: 0;
+}
+
+.tracker-tile.upcoming .tracker-merchant {
     font-size: 0.75rem;
-    color: #888;
+    color: #F1AA9B;
     margin: 2px 0 0;
 }
 
-.tracker-amount {
-    font-size: 0.95rem;
+.tracker-tile.upcoming .tracker-amount {
+    font-size: 0.9rem;
     font-weight: 500;
-    color: #312C51;
+    color: #c9c4e0;
     margin: 0;
     text-align: right;
 }
 
-.tracker-date {
+.tracker-tile.upcoming .tracker-date {
     font-size: 0.75rem;
-    color: #888;
+    color: #F1AA9B;
     margin: 2px 0 0;
     text-align: right;
 }

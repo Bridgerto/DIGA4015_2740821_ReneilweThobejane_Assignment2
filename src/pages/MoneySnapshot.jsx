@@ -13,7 +13,7 @@ import "../cssFiles/MoneySnapshot.css";
 
 export default function MoneySnapshot() {
     return (
-        <div className="snapshot-page">
+        <div className="snapshot-page"> 
             {/* NAVIGATION */}
             <NavBar />
      

@@ -1,11 +1,13 @@
 .track-card {
     background-color: #ffffff;
+    
     border-radius: 16px;
     padding: 20px;
     cursor: pointer;
     flex: 1;
     transition: transform 0.2s;
     border: 2px solid transparent;
+    min-height: 350px;
 }
 
 .track-card:hover {
@@ -15,7 +17,7 @@
 
 .track-card-image-placeholder {
     width: 100%;
-    height: 120px;
+    height: 220px;
     background-color: #e0dcea;
     border-radius: 10px;
     margin-bottom: 16px;

@@ -17,7 +17,7 @@ export default function TrackCard({ title, description, prioritises, avoids, tra
                 <p className="track-card-description">{description}</p>
             </div>
 
-            {/* MODAL OVERLAY */}
+            {/* MODAL OVERLAY */} 
             {isOpen && (
                 <div className="track-modal-overlay" onClick={() => setIsOpen(false)}>
                     <div className="track-modal" onClick={(e) => e.stopPropagation()}>

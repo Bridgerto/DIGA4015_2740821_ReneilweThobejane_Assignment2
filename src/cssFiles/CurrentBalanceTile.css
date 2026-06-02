@@ -1,9 +1,11 @@
 .balance-container {
     border-radius: 16px;
+    margin-left: 130px ;
     padding: 24px 28px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     min-width: 200px;
 
 }
@@ -17,7 +19,7 @@
 }
 
 .balance-amount {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-weight: 500;
     color: #F0C38E;
     margin: 0 0 6px;

@@ -40,7 +40,7 @@ export default function FixedCostsTracker() {
             <div className="tracker-section">
                 <h3 className="tracker-title">Upcoming Payments</h3>
                 {upcoming.length === 0 ? (
-                    <p className="tracker-empty">No upcoming payments this month.</p>
+                    <p className="tracker-empty">No upcoming payments this month.</p> 
                 ) : (
                     upcoming.map((expense, index) => (
                         <div key={index} className="tracker-tile upcoming">
