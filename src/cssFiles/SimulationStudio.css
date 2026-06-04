@@ -5,7 +5,41 @@
 
 .simulation-studio-content{
     /*layout*/
-    width: 72%;
+    width: 74%;
     float: right;
-    background-color: pink;
+    margin-right: 1.5%;
+}
+
+.simulation-studio-header{
+    display: flex;
+    margin: 50px 0 50px 0;
+}
+
+.simulation-studio-title{
+    margin-left: 300px;
+}
+
+.simulation-studio-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lab-item{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.lab-img{
+    width: 400px;
+    height: 160px;
+    background-color: blueviolet;
+    border-radius: 20px 0 0 20px
+}
+
+.lab-info{
+    margin: 0 25px 0 15px;
 }

@@ -9,7 +9,6 @@ import TrackCard from "../components/TrackCard";
 // ICONS
 import emptyAvatar from "../assets/avatars/emptyAvatar.png";
 
-
 // STYLING
 import "../cssFiles/StrategyTracks.css";
 
