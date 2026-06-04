@@ -10,9 +10,15 @@ import SignUpFixedCosts from './pages/SignUpFixedCosts';
 import SignUpBankVerification from './pages/SignUpBankVerification';
 
 import MoneySnapshot from './pages/MoneySnapshot';
-import Profile from './pages/Profile';
-import SimulationStudio from './pages/SimulationStudio';
 import StrategyTracks from './pages/StrategyTracks';
+
+import SimulationStudio from './pages/SimulationStudio';
+import LabOne from './pages/LabOne';
+import LabTwo from './pages/LabTwo';
+import LabThree from './pages/LabThree';
+
+
+import Profile from './pages/Profile';
 
 
 // COMPONENTS
@@ -38,7 +44,14 @@ export default function App() {
         <Route path="/MoneySnapshot" element={<MoneySnapshot/>}/>
         <Route path="/StrategyTracks" element={<StrategyTracks />}/>
         <Route path="/SimulationStudio" element={<SimulationStudio />}/>
+        <Route path="/LabOne" element={<LabOne />}/>
+        <Route path="/LabTwo" element={<LabTwo />}/>
+        <Route path="/LabThree" element={<LabThree />}/>
+
+
         <Route path="/Profile" element={<Profile />}/>
+
+
       </Routes>    
     </div>
   );

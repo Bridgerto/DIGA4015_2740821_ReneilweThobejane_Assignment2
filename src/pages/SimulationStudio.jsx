@@ -34,7 +34,7 @@ export default function SimulationStudio(){
                 </section>
                 
                 <section className="simulation-studio-container">
-                    <Link to="/Lab1" className="lab-item">
+                    <Link to="/LabOne" className="lab-item">
                         <img src="" alt="" className="lab-img"/>
                         <div  className="lab-info">
                             <h2>LAB 1: Car Upgrade VS Invest the Difference</h2>
@@ -44,12 +44,11 @@ export default function SimulationStudio(){
                                 what they currently pay and what they would pay on the upgraded vehicle, 
                                 and shows them two possible futures for that money →  one where it goes 
                                 toward the new car, and one where it gets invested instead.
-
                             </p>
                         </div>
                     </Link>
 
-                    <Link to="/Lab2" className="lab-item">
+                    <Link to="/LabTwo" className="lab-item">
                         <img src="" alt=""  className="lab-img"/>
                         <div className="lab-info">
                             <h2>LAB 2: Minimum Repayment VS Aggressive Debt Payoff </h2>
@@ -63,7 +62,7 @@ export default function SimulationStudio(){
                         </div>
                     </Link>
 
-                    <Link to="/Lab3" className="lab-item">
+                    <Link to="/LabThree" className="lab-item">
                         <img src="" alt="" className="lab-img"/>
                         <div className="lab-info">
                             <h2>LAB 3: Renting VS Buying Property in Johannesburg</h2>
