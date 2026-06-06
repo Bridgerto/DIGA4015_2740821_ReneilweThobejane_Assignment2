@@ -5,4 +5,12 @@
 
 .lab-one-content{
     width: 74%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+/*HEADER*/
+.lab-one-header{
+    display: flex;
 }
