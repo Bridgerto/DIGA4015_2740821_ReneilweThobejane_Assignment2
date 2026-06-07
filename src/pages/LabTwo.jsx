@@ -80,23 +80,23 @@ export default function LabOne(){
                 <section className="lab-two-header">
                     <div className="lab-two-user">
                         <img src={avatar} alt="user avatar" className="lab-two-avatar" />
-                        <p className="lab-one-username">{username}</p>
+                        <p className="lab-two-username">{username}</p>
                     </div>
 
-                    <div className="lab-one-title">
+                    <div className="lab-two-title">
                         <h1> Minimum Repayment vs Aggressive Debt Payoff</h1>                         
                     </div>
                 </section>
 
                 <section className="lab-info-tab">
                     <p>
-                        This Studio is built for the user who is carrying a significant debt 
-                        obligation and making their monthly repayment consistently but has 
-                        never stopped to interrogate what that minimum repayment is actually 
-                        costing them over time. It takes the user's outstanding loan balance, 
-                        their current monthly repayment, and shows them two possible futures → 
-                        one where they continue at the same pace, and one where they increase 
-                        their repayment by an additional monthly contribution.
+                        This Studio is built for you, in the case of begin someone who is carrying 
+                        a significant debt obligation and making your monthly repayment 
+                        consistently but has never stopped to interrogate what that minimum 
+                        repayment is actually costing you over time. It takes your outstanding 
+                        loan balance, your current monthly repayment, and shows you two possible 
+                        futures → one where you continue at the same pace, and one where you increase 
+                        your repayment by an additional monthly contribution.
                     </p>
                 </section> 
 
