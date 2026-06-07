@@ -1,6 +1,8 @@
 .snapshot-page {
     background-color: #48426D;
     min-height: 100vh;
+    overflow-y: auto;
+
 
     /*display: flex;*/
 

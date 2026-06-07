@@ -1,6 +1,8 @@
 .strategy-tracks-page {
-    min-height: 110vh;
+    min-height: 100vh;
     background-color: #48426D;
+    overflow-y: auto;
+
 }
 
 .strategy-tracks-content {

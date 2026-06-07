@@ -22,7 +22,7 @@ export default function LabOne(){
     const [returnRate, setReturnRate] = useState(10);
     const [timeHorizon, setTimeHorizon] = useState(5);
 
-     // RESULTS STATE
+    // RESULTS STATE
     const [results, setResults] = useState(null);
 
     {/* CALCULATION FOR SIMULATE  */}     
@@ -31,7 +31,6 @@ export default function LabOne(){
         const monthlyRate = returnRate / 100 / 12;
         const diff = newRepayment - currentRepayment;
         const insuranceDiff = newInsurance - insurance;
-;
 
         // Path A — extra cost of upgrading
         const pathACost = diff * months;
@@ -97,10 +96,10 @@ export default function LabOne(){
                 {/* USER INPUT SECTION */} 
                 <section className="lab-simulation">
 
-                   <div classname="lab-input-grid">
+                   <div className="lab-input-grid">
 
                         {/* CURRENT CAR MONTHLY REPAYMENT PRICE */} 
-                        <div classname="lab-input-tile">
+                        <div className="lab-input-tile">
                             <p className="lab-input-label">Current Car Monthly Repayment</p>
                             <input
                                 type="number"
@@ -111,7 +110,7 @@ export default function LabOne(){
                         </div>
 
                         {/* NEW CAR MONTHLY REPAYMENT PRICE */} 
-                        <div classname="lab-input-tile">
+                        <div className="lab-input-tile">
                             <p className="lab-input-label">New Car Monthly Repayment Price</p>
                             <input
                                 type="number"
@@ -119,11 +118,10 @@ export default function LabOne(){
                                 value={newRepayment}
                                 onChange={(e) => setNewRepayment(parseFloat(e.target.value))}
                             />
-
                         </div>
 
                         {/* MONTHLY INSURANCE PRICE */} 
-                        <div classname="lab-input-tile">
+                        <div className="lab-input-tile">
                             <p className="lab-input-label">Monthly Insurance Price</p>
                                 <input
                                 	type="number"
@@ -144,48 +142,43 @@ export default function LabOne(){
                             />
                         </div>
 
+                        {/* INVESTMENT RETURN RATES (% PER ANNUM) */} 
+                        <div className="lab-input-tile">
+                            <p className="lab-input-label">Investment Return Rate (% per annum)</p>
+                            <p className="lab-slider-value">{returnRate} %</p>
+                            <input
+                                type="range"
+                                min="5"
+                                max="20"
+                                step="1"
+                                value={returnRate}
+                                onChange={(e) => setReturnRate(parseFloat(e.target.value))}
+                                className="lab-slider"
+                            />
+                        </div>
 
+                        <div className="lab-input-tile lab-time-horizon">
+                            <p className="lab-input-label">Time Horizon (years)</p>
+                            <p className="lab-slider-value">{timeHorizon} years</p>
 
-                   </div>
+                            <input
+                                type="range"
+                                min="3"
+                                max="10"
+                                step="1"
+                                value={timeHorizon}
+                                onChange={(e) => setTimeHorizon(parseFloat(e.target.value))}
+                                className="lab-slider"
+                            />
+                        </div>
+                    </div>
 
-                    {/* USER INPUT SECTION - PART 2*/}
+                    {/* SIMULATE BUTTON*/}
                     <div className="lab-bottom-row">
-
-                    {/* INVESTMENT RETURN RATES (% PER ANNUM) */} 
-                    <div classname="lab-input-tile">
-                        <p className="lab-input-label">Investment Return Rate (% per annum)</p>
-                        <p className="lab-slider-value">{returnRate} %</p>
-                        <input
-                            type="range"
-                            min="5"
-                            max="20"
-                            step="1"
-                            value={returnRate}
-                            onChange={(e) => setReturnRate(parseFloat(e.target.value))}
-                            className="lab-slider"
-                        />
+                        <button className="lab-simulate-button" onClick={handleSimulate}>
+                            SIMULATE
+                        </button>
                     </div>
-
-                    <div className="lab-input-tile lab-time-horizon">
-                        <p className="lab-input-label">Time Horizon (years)</p>
-                        <p className="lab-slider-value">{timeHorizon} years</p>
-
-                        <input
-                            type="range"
-                            min="3"
-                            max="10"
-                            step="1"
-                            value={timeHorizon}
-                            onChange={(e) => setTimeHorizon(parseFloat(e.target.value))}
-                            className="lab-slider"
-                        />
-                    </div>
-
-                    </div>
-  
-                    <button className="lab-simulate-button" onClick={handleSimulate}>
-                        SIMULATE
-                    </button>
                 </section>
 
                 {/*WHAT HAPPENS WHEN SIMULATE IS CLICKED*/}
@@ -286,8 +279,6 @@ export default function LabOne(){
                             </section>
 
                         </section>
-
-
                     </>
                 )}
             </div>        

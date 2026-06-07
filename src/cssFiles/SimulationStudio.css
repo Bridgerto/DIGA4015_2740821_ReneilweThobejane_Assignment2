@@ -1,6 +1,8 @@
 .simulation-studio-page{
    background-color: #48426D;
    min-height: 100vh;
+   overflow-y: auto;
+
 }
 
 .simulation-studio-content{
