@@ -10,14 +10,14 @@
     float: right;
     display: flex;
     flex-direction: column;
-}
+} 
 
 /*HEADER*/
 .lab-one-header{
     display: flex;
     align-items: center;
     gap: 50px;
-    margin-top: 50px;
+    margin: 50px 0 50px 0;
 }
 
 .lab-one-user{
@@ -42,14 +42,15 @@
 }
 
 /* INFO TAB */
-.lab-info-tab {
+.lab-one-info-tab {
     background-color: rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 16px 20px;
+    margin-bottom: 30px;
 }
 
 /* INPUT SECTION */
-.lab-simulation {
+.lab-one-simulation {
     background-color: #312C51;
     border-radius: 16px;
     padding: 24px;
@@ -58,23 +59,23 @@
     gap: 16px;
 }
 
-.lab-input-grid {
+.lab-one-input-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
 }
 
-.lab-input-tile{
+.lab-one-input-tile{
     background-color: #ffffff;
     border-radius: 12px;
-    padding: 16px 20px;
+    padding: 16px 10px;
     display: flex;
     flex-direction: column;
     gap: 8px;
 
 }
 
-.lab-input-label {
+.lab-one-input-label {
     font-size: 0.8rem;
     color: #555;
     margin: 0;
@@ -82,20 +83,20 @@
 }
 
 /*need to ajust the padding*/
-.lab-input-field {
-    padding: 10px 14px;
+.lab-one-input-field {
+    padding: 10px 15px;
     border-radius: 8px;
     border: 1px solid #ddd;
     font-size: 1rem;
     color: #312C51;
-    width: 100%;
+    width: 93%;
 }
 
-.lab-input-field:focus {
+.lab-one-input-field:focus {
     outline: 2px solid #312C51;
 }
 
-.lab-slider-value {
+.lab-one-slider-value {
     font-size: 1.8rem;
     font-weight: 500;
     color: #312C51;
@@ -103,7 +104,31 @@
     text-align: center;
 }
 
-.lab-slider {
+.lab-one-slider {
     width: 100%;
     accent-color: #312C51;
 }
+
+.lab-one-bottom-row{
+    margin-left:40%;
+}
+
+/*WHEN SIMULATE IS CLICKED*/
+
+/*EDUCATIONAL CONTENT*/
+.lab-educational {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px 20px;
+}
+
+.lab-educational p {
+    color: #c9c4e0;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+
+

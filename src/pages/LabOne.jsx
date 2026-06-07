@@ -82,7 +82,7 @@ export default function LabOne(){
                     </div>
                 </section>
 
-                <section className="lab-info-tab">
+                <section className="lab-one-info-tab">
                     <p>
                         This lab is built for the user who is considering upgrading their 
                         current vehicle to a more expensive one. It takes the financial 
@@ -94,58 +94,58 @@ export default function LabOne(){
                 </section>
 
                 {/* USER INPUT SECTION */} 
-                <section className="lab-simulation">
+                <section className="lab-one-simulation">
 
-                   <div className="lab-input-grid">
+                   <div className="lab-one-input-grid">
 
                         {/* CURRENT CAR MONTHLY REPAYMENT PRICE */} 
-                        <div className="lab-input-tile">
-                            <p className="lab-input-label">Current Car Monthly Repayment</p>
+                        <div className="lab-one-input-tile">
+                            <p className="lab-one-input-label">Current Car Monthly Repayment</p>
                             <input
                                 type="number"
-                                className="lab-input-field"
+                                className="lab-one-input-field"
                                 value={currentRepayment}
                                 onChange={(e) => setCurrentRepayment(parseFloat(e.target.value))}
                             />
                         </div>
 
                         {/* NEW CAR MONTHLY REPAYMENT PRICE */} 
-                        <div className="lab-input-tile">
-                            <p className="lab-input-label">New Car Monthly Repayment Price</p>
+                        <div className="lab-one-input-tile">
+                            <p className="lab-one-input-label">New Car Monthly Repayment Price</p>
                             <input
                                 type="number"
-                                className="lab-input-field"
+                                className="lab-one-input-field"
                                 value={newRepayment}
                                 onChange={(e) => setNewRepayment(parseFloat(e.target.value))}
                             />
                         </div>
 
                         {/* MONTHLY INSURANCE PRICE */} 
-                        <div className="lab-input-tile">
-                            <p className="lab-input-label">Monthly Insurance Price</p>
+                        <div className="lab-one-input-tile">
+                            <p className="lab-one-input-label">Monthly Insurance Price</p>
                                 <input
                                 	type="number"
-                                    className="lab-input-field"
+                                    className="lab-one-input-field"
                                 	value={insurance}
                                 	onChange={(e) => setInsurance(parseFloat(e.target.value))}
                             	/>
                         </div>
 
                         {/* ESTIMATED NEW CAR INSURANCE PRICE */} 
-                        <div className="lab-input-tile">
-                            <p className="lab-input-label">Estimated New Car Insurance Price</p>
+                        <div className="lab-one-input-tile">
+                            <p className="lab-one-input-label">Estimated New Car Insurance Price</p>
                             <input
                                 type="number"
-                                className="lab-input-field"
+                                className="lab-one-input-field"
                                 value={newInsurance}
                                 onChange={(e) => setNewInsurance(parseFloat(e.target.value))}
                             />
                         </div>
 
                         {/* INVESTMENT RETURN RATES (% PER ANNUM) */} 
-                        <div className="lab-input-tile">
-                            <p className="lab-input-label">Investment Return Rate (% per annum)</p>
-                            <p className="lab-slider-value">{returnRate} %</p>
+                        <div className="lab-one-input-tile">
+                            <p className="lab-one-input-label">Investment Return Rate (% per annum)</p>
+                            <p className="lab-one-slider-value">{returnRate} %</p>
                             <input
                                 type="range"
                                 min="5"
@@ -153,13 +153,13 @@ export default function LabOne(){
                                 step="1"
                                 value={returnRate}
                                 onChange={(e) => setReturnRate(parseFloat(e.target.value))}
-                                className="lab-slider"
+                                className="lab-one-slider"
                             />
                         </div>
 
-                        <div className="lab-input-tile lab-time-horizon">
-                            <p className="lab-input-label">Time Horizon (years)</p>
-                            <p className="lab-slider-value">{timeHorizon} years</p>
+                        <div className="lab-one-input-tile lab-time-horizon">
+                            <p className="lab-one-input-label">Time Horizon (years)</p>
+                            <p className="lab-one-slider-value">{timeHorizon} years</p>
 
                             <input
                                 type="range"
@@ -168,14 +168,14 @@ export default function LabOne(){
                                 step="1"
                                 value={timeHorizon}
                                 onChange={(e) => setTimeHorizon(parseFloat(e.target.value))}
-                                className="lab-slider"
+                                className="lab-one-slider"
                             />
                         </div>
                     </div>
 
                     {/* SIMULATE BUTTON*/}
-                    <div className="lab-bottom-row">
-                        <button className="lab-simulate-button" onClick={handleSimulate}>
+                    <div className="lab-one-bottom-row">
+                        <button className="lab-one-simulate-button" onClick={handleSimulate}>
                             SIMULATE
                         </button>
                     </div>

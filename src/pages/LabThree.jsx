@@ -128,7 +128,7 @@ export default function LabThree(){
                     </div>
                 </section>
 
-                    <section className="lab-info-tab">
+                    <section className="lab-three-info-tab">
                     <p>
                       This Studio is built for the user who is at a crossroads between 
                       continuing to rent or taking the step toward purchasing their first 
@@ -141,35 +141,35 @@ export default function LabThree(){
                 </section> 
 
                 {/*USER INPUT SECTION*/}
-                <section className="lab-simulation">
+                <section className="lab-three-simulation">
 
-                    <div className="lab-input-grid">
+                    <div className="lab-three-input-grid">
                         {/* MONTHLY RENT */}
-                        <div className="lab-input-tile">
-                            <p className="lab-input-label">Current Monthly Rent</p>
+                        <div className="lab-three-input-tile">
+                            <p className="lab-three-input-label">Current Monthly Rent</p>
                             <input
                                 type="number"
-                                className="lab-input-field"
+                                className="lab-three-input-field"
                                 value={monthlyRent}
                                 onChange={(e) => setMonthlyRent(parseFloat(e.target.value))}
                             />
                         </div>
 
                         {/* PROPERTY PURCHASE PRICE */}
-                        <div className="lab-input-tile">
-                            <p className="lab-input-label">Property Purchase Price</p>
+                        <div className="lab-three-input-tile">
+                            <p className="lab-three-input-label">Property Purchase Price</p>
                             <input
                                 type="number"
-                                className="lab-input-field"
+                                className="lab-three-input-field"
                                 value={propertyPrice}
                                 onChange={(e) => setPropertyPrice(parseFloat(e.target.value))}
                             />
                         </div>
 
                         {/* ANNUAL RENTAL ESCALATION SLIDER */}
-                        <div className="lab-input-tile">
-                            <p className="lab-input-label">Annual Rental Escalation (%)</p>
-                            <p className="lab-slider-value">{rentalEscalation} %</p>
+                        <div className="lab-three-input-tile">
+                            <p className="lab-three-input-label">Annual Rental Escalation (%)</p>
+                            <p className="lab-three-slider-value">{rentalEscalation} %</p>
                             <input
                                 type="range"
                                 min="3"
@@ -177,14 +177,14 @@ export default function LabThree(){
                                 step="0.5"
                                 value={rentalEscalation}
                                 onChange={(e) => setRentalEscalation(parseFloat(e.target.value))}
-                                className="lab-slider"
+                                className="lab-three-slider"
                             />
                         </div>
 
                         {/* BOND INTEREST RATE SLIDER */}
-                        <div className="lab-input-tile">
-                            <p className="lab-input-label">Bond Interest Rate (% p/a)</p>
-                            <p className="lab-slider-value">{bondInterestRate} %</p>
+                        <div className="lab-three-input-tile">
+                            <p className="lab-three-input-label">Bond Interest Rate (% p/a)</p>
+                            <p className="lab-three-slider-value">{bondInterestRate} %</p>
                             <input
                                 type="range"
                                 min="8"
@@ -192,14 +192,14 @@ export default function LabThree(){
                                 step="0.25"
                                 value={bondInterestRate}
                                 onChange={(e) => setBondInterestRate(parseFloat(e.target.value))}
-                                className="lab-slider"
+                                className="lab-three-slider"
                             />
                         </div>
 
                         {/* PROPERTY APPRECIATION RATE SLIDER */}
-                        <div className="lab-input-tile">
-                            <p className="lab-input-label">Property Appreciation Rate (% p/a)</p>
-                            <p className="lab-slider-value">{appreciationRate} %</p>
+                        <div className="lab-three-input-tile">
+                            <p className="lab-three-input-label">Property Appreciation Rate (% p/a)</p>
+                            <p className="lab-three-slider-value">{appreciationRate} %</p>
                             <input
                                 type="range"
                                 min="1"
@@ -207,14 +207,14 @@ export default function LabThree(){
                                 step="0.5"
                                 value={appreciationRate}
                                 onChange={(e) => setAppreciationRate(parseFloat(e.target.value))}
-                                className="lab-slider"
+                                className="lab-three-slider"
                             />
                         </div>
                     </div>
 
                         {/* SIMULATE BUTTON */}
-                        <div className="lab-bottom-row">
-                            <button className="lab-simulate-button" onClick={handleSimulate}>
+                        <div className="lab-three-bottom-row">
+                            <button className="lab-three-simulate-button" onClick={handleSimulate}>
                                 SIMULATE
                             </button>
                         </div>

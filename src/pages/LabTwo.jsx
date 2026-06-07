@@ -88,7 +88,7 @@ export default function LabOne(){
                     </div>
                 </section>
 
-                <section className="lab-info-tab">
+                <section className="lab-two-info-tab">
                     <p>
                         This Studio is built for you, in the case of begin someone who is carrying 
                         a significant debt obligation and making your monthly repayment 
@@ -101,47 +101,47 @@ export default function LabOne(){
                 </section> 
 
                 {/* USER INPUT SECTION */} 
-                <section className="lab-simulation">
+                <section className="lab-two-simulation">
 
-                    <div className="lab-input-grid">
+                    <div className="lab-two-input-grid">
 
                         {/* OUTSTANDING LOAN BALANCE */}
-                        <div className="lab-input-tile">
-                            <p className="lab-input-label">Outstanding Loan Balance</p>
+                        <div className="lab-two-input-tile">
+                            <p className="lab-two-input-label">Outstanding Loan Balance</p>
                             <input
                                 type="number"
-                                className="lab-input-field"
+                                className="lab-two-input-field"
                                 value={outstandingLoanBalance}
                                 onChange={(e) => setOutstandingLoanBalance(parseFloat(e.target.value))}
                             />
                         </div>
 
                         {/* CURRENT MONTHLY REPAYMENT OF LOAN */}
-                        <div className="lab-input-tile">
-                            <p className="lab-input-label">Current Monthly Repayment of Loan</p>
+                        <div className="lab-two-input-tile">
+                            <p className="lab-two-input-label">Current Monthly Repayment of Loan</p>
                             <input
                                 type="number"
-                                className="lab-input-field"
+                                className="lab-two-input-field"
                                 value={currentRepayment}
                                 onChange={(e) => setCurrentRepayment(parseFloat(e.target.value))}
                             />
                         </div>
 
                         {/* ADDITIONAL MONTHLY CONTRIBUTION */}
-                        <div className="lab-input-tile">
-                            <p className="lab-input-label">Additional Monthly Contribution</p>
+                        <div className="lab-two-input-tile">
+                            <p className="lab-two-input-label">Additional Monthly Contribution</p>
                             <input
                                 type="number"
-                                className="lab-input-field"
+                                className="lab-two-input-field"
                                 value={additionalContribution}
                                 onChange={(e) => setAdditionalContribution(parseFloat(e.target.value))}
                             />
                         </div>
 
                         {/* INTEREST RATE SLIDER */}
-                        <div className="lab-input-tile">
-                            <p className="lab-input-label">Loan Interest Rate (% per annum)</p>
-                            <p className="lab-slider-value">{interestRate} %</p>
+                        <div className="lab-two-input-tile">
+                            <p className="lab-two-input-label">Loan Interest Rate (% per annum)</p>
+                            <p className="lab-two-slider-value">{interestRate} %</p>
                             <input
                                 type="range"
                                 min="5"
@@ -149,14 +149,14 @@ export default function LabOne(){
                                 step="0.25"
                                 value={interestRate}
                                 onChange={(e) => interestRate(parseFloat(e.target.value))}
-                                className="lab-slider"
+                                className="lab-two-slider"
                             />
                         </div>                
                     </div>
 
                     {/* SIMULATE BUTTON*/}
-                    <div className="lab-bottom-row">
-                        <button className="lab-simulate-button" onClick={handleSimulate}>
+                    <div className="lab-two-bottom-row">
+                        <button className="lab-two-simulate-button" onClick={handleSimulate}>
                             SIMULATE
                         </button>
                     </div>
@@ -166,7 +166,7 @@ export default function LabOne(){
                 {results && (
                     <>
                         {/*EXPLAINERY LAYER FEATURE - EDUCATIONAL CONTENT*/}
-                        <section className="lab-educational">
+                        <section className="lab-two-educational">
                             <h2>Educational Content</h2>
                             <p> 
                                 Private student loans in South Africa are typically structured
