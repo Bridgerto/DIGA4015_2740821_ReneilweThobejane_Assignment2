@@ -55,9 +55,9 @@ export default function SignUp (){
     <div className="signup-container">
 
         {/*LEFT SIDE - form area*/}
-          <div className="signup-left"> 
-            <h1>Welcome, time to create your account</h1>
-            <p> Step 1 of 3</p>   {/*We will came back here and improve the UI for final submission*/}
+        <div className="signup-left"> 
+            <h1 className="signup-title">Welcome, time to create your account</h1>
+            <h2 className="progress-tracker"> Step 1 of 3</h2>   {/*We will came back here and improve the UI for final submission*/}
 
             <label>Username</label>
                 <input 
@@ -88,26 +88,29 @@ export default function SignUp (){
 
             {error && <p className="signup-error">{error}</p>} 
            
-            <button onClick={handleProceed}>PROCEED TO STEP 2</button>       
-          <div className="signup-right">
+            <button onClick={handleProceed} className="signup-button">PROCEED TO STEP 2</button>       
+        
+        </div>
 
-        {/* RIGHT SIDE — avatar selection */}     
-            {/* EmptyIcon */} 
-            <div className="avatar-preview"> 
- 		        <img 
-                    src={selectedAvatar || placeHolderAvatar} 
-                    alt="selected avatar" 
-                    className="avatar-preview-img"
-                />
-            </div>
 
-            {/* Avatar grid */}
+        <div className="signup-right">
+            {/* RIGHT SIDE — avatar selection */}     
+                {/* EmptyIcon */} 
+                <div className="avatar-preview"> 
+                    <img 
+                        src={selectedAvatar || placeHolderAvatar} 
+                        alt="selected avatar" 
+                        className="avatar-preview-img"
+                    />
+                </div>
+
+                {/* Avatar grid */}
                 <div className="avatar-grid">
                     {avatars.map((avatar) => (
                         <div
-                            key={avatar}
-                            onClick={() => setSelectedAvatar(avatar)}
-                            className={`avatar-option ${selectedAvatar === avatar ? "avatar-selected" : ""}`}
+                                key={avatar}
+                                onClick={() => setSelectedAvatar(avatar)}
+                                className={`avatar-option ${selectedAvatar === avatar ? "avatar-selected" : ""}`}
                         >
                             <img
                                 src={avatar}
@@ -118,12 +121,15 @@ export default function SignUp (){
                     ))}
                 </div>
 
+                {/*ICON INSTRUCTION*/}
+                <div className="signup-icon-text">
+                    <p>Choose your profile icon</p>
+                </div>
 
-          </div>
-    
         </div>
+    
     </div>
-    );
+  );
 }
 
 
