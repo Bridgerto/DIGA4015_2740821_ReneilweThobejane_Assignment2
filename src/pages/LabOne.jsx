@@ -185,100 +185,101 @@ export default function LabOne(){
                 {results && (
                     <>
                         {/*EXPLAINERY LAYER FEATURE - EDUCATIONAL CONTENT*/}
-                        <section className="lab-educational">
+                        <section className="lab-one-educational">
                             <h2>Educational Content</h2>
                             <p> 
                                 Vehicle finance in South Africa is calculated at prime-linked interest 
                                 rates,currently sitting at approximately 11.75% p/a. Insurance premiums
                                 for high-value vehicles in Gauteng are significantly elevated due to 
                                 theft and hijacking statistics. Depreciation on new vehicles in 
-                                South Africa averages 15–20% in the first year alone.
+                                South Africa averages 15-20% in the first year alone.
                             </p>
                         </section>
 
                         {/* PATH CARDS */}
-                        <section className="lab-paths">
+                        <section className="lab-one-paths">
 
-                            <div className="lab-path-card path-a">
-                                <div className="lab-path-header">
+                            <div className="lab-one-path-card path-a">
+                                <div className="lab-one-path-header">
                                     <h3>PATH A</h3>
                                     <p>UPGRADE CAR</p>
                                 </div>
-                                <div className="lab-path-body">
-                                    <p className="lab-path-metric-label">Extra monthly cost</p>
-                                    <p className="lab-path-metric-value">R {results.diff.toLocaleString("en-ZA")}</p>
-                                    <p className="lab-path-metric-label">Total extra cost over period</p>
-                                    <p className="lab-path-metric-value">R {Math.round(results.pathACost).toLocaleString("en-ZA")}</p>
+                                <div className="lab-one-path-body">
+                                    <p className="lab-one-path-metric-label">Extra monthly cost</p>
+                                    <p className="lab-one-path-metric-value">R {results.diff.toLocaleString("en-ZA")}</p>
+                                    <p className="lab-one-path-metric-label">Total extra cost over period</p>
+                                    <p className="lab-one-path-metric-value">R {Math.round(results.pathACost).toLocaleString("en-ZA")}</p>
                                 </div>
                             </div>
 
-                            <div className="lab-path-card path-b">
-                                    <div className="lab-path-header">
+                            <div className="lab-one-path-card path-b">
+                                    <div className="lab-one-path-header">
                                     <h3>PATH B</h3>
                                     <p>KEEP OLD CAR, INVEST DIFFERENCE</p>
                                 </div>
-                                <div className="lab-path-body">
-                                    <p className="lab-path-metric-label">Monthly investment</p>
-                                    <p className="lab-path-metric-value">R {results.diff.toLocaleString("en-ZA")}</p>
-                                    <p className="lab-path-metric-label">Investment value at the end</p>
-                                    <p className="lab-path-metric-value">R {Math.round(results.pathBValue).toLocaleString("en-ZA")}</p>
-                                    <p className="lab-path-metric-label">Difference vs Path A</p>
-                                    <p className="lab-path-metric-value">R {Math.round(results.difference).toLocaleString("en-ZA")} ahead</p>
+                                <div className="lab-one-path-body">
+                                    <p className="lab-one-path-metric-label">Monthly investment</p>
+                                    <p className="lab-one-path-metric-value">R {results.diff.toLocaleString("en-ZA")}</p>
+                                    <p className="lab-one-path-metric-label">Investment value at the end</p>
+                                    <p className="lab-one-path-metric-value">R {Math.round(results.pathBValue).toLocaleString("en-ZA")}</p>
+                                    <p className="lab-one-path-metric-label">Difference vs Path A</p>
+                                    <p className="lab-one-path-metric-value">R {Math.round(results.difference).toLocaleString("en-ZA")} ahead</p>
                                 </div>
                             </div>
-
-                            {/*VISUAL BARS*/}
-                            <section className="lab-bars">
-
-                                <div className="lab-bar-row">
-                                    <p className="lab-bar-label">Path A Total Cost</p>
-                                    <div className="lab-bar-track">
-                                        <div
-                                            className="lab-bar-fill path-a-fill"
-                                            style={{
-                                                width: `${(results.pathACost / Math.max(results.pathACost, results.pathBValue)) * 100}%`
-                                            }}
-                                        >
-                                            <span>R {Math.round(results.pathACost).toLocaleString("en-ZA")}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div className="lab-bar-row">
-                                    <p className="lab-bar-label">Path B Investment</p>
-                                    <div className="lab-bar-track">
-                                        <div
-                                            className="lab-bar-fill path-b-fill"
-                                            style={{
-                                                width: `${(results.pathBValue / Math.max(results.pathACost, results.pathBValue)) * 100}%`
-                                            }}
-                                        >
-                                            <span>R {Math.round(results.pathBValue).toLocaleString("en-ZA")}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-
-                            {/* LAB VERDICT */}
-                            <section className="lab-verdict">
-                                <p className="lab-verdict-title">LAB VERDICT</p>
-                                <p className="lab-verdict-text">
-                                    Upgrading your car costs you an extra 
-                                    R {Math.round(results.pathACost).toLocaleString("en-ZA")} over  
-                                    {results.timeHorizon} years. Investing that same amount monthly 
-                                    at {results.returnRate}% p/a grows to 
-                                    R {Math.round(results.pathBValue).toLocaleString("en-ZA")}. The 
-                                    investment leaves you 
-                                    R {Math.round(results.difference).toLocaleString("en-ZA")} better 
-                                    off. This car cost is excluding the 
-                                    R {Math.round(results.totalInsurance).toLocaleString("en-ZA")} that
-                                    will go to insurance over the span of {results.timeHorizon} years. 
-                                    Not to mention that the car will have depreciated to roughly 
-                                    R {Math.round(results.depreciatedValue).toLocaleString("en-ZA")}.
-                                </p>        
-                            </section>
-
                         </section>
+
+                        {/*VISUAL BARS*/}
+                        <section className="lab-bars">
+
+                            <div className="lab-bar-row">
+                                <p className="lab-bar-label">Path A Total Cost</p>
+                                <div className="lab-bar-track">
+                                    <div
+                                        className="lab-bar-fill path-a-fill"
+                                        style={{
+                                            width: `${(results.pathACost / Math.max(results.pathACost, results.pathBValue)) * 100}%`
+                                        }}
+                                    >
+                                        <span>R {Math.round(results.pathACost).toLocaleString("en-ZA")}</span>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            <div className="lab-bar-row">
+                                <p className="lab-bar-label">Path B Investment</p>
+                                <div className="lab-bar-track">
+                                    <div
+                                        className="lab-bar-fill path-b-fill"
+                                        style={{
+                                            width: `${(results.pathBValue / Math.max(results.pathACost, results.pathBValue)) * 100}%`
+                                        }}
+                                    >
+                                        <span>R {Math.round(results.pathBValue).toLocaleString("en-ZA")}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        {/* LAB VERDICT */}
+                        <section className="lab-verdict">
+                            <p className="lab-verdict-title">LAB VERDICT</p>
+                            <p className="lab-verdict-text">
+                                Upgrading your car costs you an extra 
+                                R {Math.round(results.pathACost).toLocaleString("en-ZA")} over  
+                                {results.timeHorizon} years. Investing that same amount monthly 
+                                at {results.returnRate}% p/a grows to 
+                                R {Math.round(results.pathBValue).toLocaleString("en-ZA")}. The 
+                                investment leaves you 
+                                R {Math.round(results.difference).toLocaleString("en-ZA")} better 
+                                off. This car cost is excluding the 
+                                R {Math.round(results.totalInsurance).toLocaleString("en-ZA")} that
+                                will go to insurance over the span of {results.timeHorizon} years. 
+                                Not to mention that the car will have depreciated to roughly 
+                                R {Math.round(results.depreciatedValue).toLocaleString("en-ZA")}.
+                            </p>        
+                        </section>
+
+                       
                     </>
                 )}
             </div>        

@@ -34,7 +34,7 @@ export default function SignUp (){
 
     function handleProceed()
     {
-        /*if (!username || !password || !grossIncome || !selectedAvatar) 
+        if (!username || !password || !grossIncome || !selectedAvatar) 
         {
             setError("Please fill in all fields and select a profile icon.");
             return;  
@@ -44,7 +44,7 @@ export default function SignUp (){
         localStorage.setItem("username", username );
         localStorage.setItem("password", password );
         localStorage.setItem("grossIncome", grossIncome );
-        localStorage.setItem("avatar", selectedAvatar); */
+        localStorage.setItem("avatar", selectedAvatar); 
 
         //after everything has been done, then you can move to the SignUpFixedCost.jsx page
         navigateSignUp(`/SignUpFixedCosts`);

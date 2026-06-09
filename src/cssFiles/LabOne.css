@@ -116,17 +116,70 @@
 /*WHEN SIMULATE IS CLICKED*/
 
 /*EDUCATIONAL CONTENT*/
-.lab-educational {
+.lab-one-educational {
     background-color: rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 16px 20px;
+    margin: 50px 0;
 }
 
-.lab-educational p {
+.lab-one-educational p {
     color: #c9c4e0;
     font-size: 0.85rem;
     line-height: 1.6;
     margin: 0;
+}
+
+/* PATH CARDS */
+.lab-one-paths {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.lab-one-path-card {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.lab-one-path-header {
+    padding: 16px;
+    text-align: center;
+}
+
+.lab-one-path-header h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+}
+
+.lab-one-path-header p {
+    font-size: 0.75rem;
+    margin: 4px 0 0;
+    color: #ffffff;
+    letter-spacing: 0.06em;
+}
+
+
+.lab-one-path-body {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.path-a .lab-one-path-header {
+    background-color: #312C51;
+    border: 2px solid #F0C38E;
+    border-bottom: none;
+}
+
+.path-b .lab-one-path-header {
+    background-color: #312C51;
+    border: 2px solid #F0C38E;
+    border-bottom: none;
 }
 
 
