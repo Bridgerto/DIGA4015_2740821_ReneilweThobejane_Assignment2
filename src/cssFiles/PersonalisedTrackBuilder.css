@@ -1,0 +1,236 @@
+.ptb-page {
+    min-height: 100vh;
+    background-color: #48426D;
+}
+
+.ptb-content {
+    width: 74%;
+    float: right;
+    margin-right: 1.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 60px;
+}
+
+/* HEADER */
+.ptb-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.ptb-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.ptb-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid #F0C38E;
+    object-fit: cover;
+}
+
+.ptb-username {
+    font-size: 0.8rem;
+    color: #F1AA9B;
+    margin: 0;
+    text-align: center;
+}
+
+.ptb-title h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* FINANCIAL SUMMARY BAR */
+.ptb-summary {
+    display: flex;
+    gap: 16px;
+}
+
+.ptb-summary-tile {
+    background-color: #48426D;
+    border-radius: 12px;
+    padding: 16px 20px;
+    flex: 1;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.ptb-summary-tile.highlight {
+    background-color: #F0C38E;
+}
+
+.ptb-summary-label {
+    font-size: 0.75rem;
+    color: #c9c4e0;
+    margin: 0 0 6px;
+}
+
+.ptb-summary-tile.highlight .ptb-summary-label {
+    color: #312C51;
+}
+
+.ptb-summary-value {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0;
+}
+
+.ptb-summary-tile.highlight .ptb-summary-value {
+    color: #312C51;
+}
+
+/* QUESTIONNAIRE */
+.ptb-questionnaire {
+    background-color: #312C51;
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ptb-step {
+    font-size: 0.8rem;
+    color: #F1AA9B;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0;
+}
+
+.ptb-question {
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.ptb-textarea {
+    padding: 16px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    color: #312C51;
+    resize: vertical;
+    width: 100%;
+    font-family: inherit;
+}
+
+.ptb-textarea:focus {
+    outline: 2px solid #F0C38E;
+}
+
+.ptb-error {
+    color: #F1AA9B;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.ptb-button {
+    background-color: #F0C38E;
+    color: #312C51;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 32px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.2s;
+}
+
+.ptb-button:hover {
+    background-color: #F1AA9B;
+}
+
+/* LOADING */
+.ptb-loading {
+    background-color: #312C51;
+    border-radius: 16px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.ptb-loading p {
+    color: #c9c4e0;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.ptb-spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid rgba(255,255,255,0.1);
+    border-top-color: #F0C38E;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* GENERATED TRACK */
+.ptb-track {
+    background-color: #312C51;
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ptb-track-heading {
+    color: #F0C38E;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.ptb-track-section {
+    background-color: #48426D;
+    border-radius: 12px;
+    padding: 20px 24px;
+}
+
+.ptb-track-section-heading {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #F0C38E;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 10px;
+}
+
+.ptb-track-section-content {
+    font-size: 0.9rem;
+    color: #c9c4e0;
+    line-height: 1.6;
+    margin: 0 0 6px;
+}
+
+.ptb-nudge {
+    background-color: #F1AA9B;
+}
+
+.ptb-nudge .ptb-track-section-heading {
+    color: #312C51;
+}
+
+.ptb-nudge .ptb-track-section-content {
+    color: #312C51;
+}
