@@ -47,6 +47,44 @@ export default function PersonalisedTrackBuilder() {
     });
     const [currentAnswer, setCurrentAnswer] = useState("");
 
+    const [isLoading, setIsLoading] = useState(false);
+    const [generatedTrack, setGeneratedTrack] = useState(null);
+    const [error, setError] = useState("");
+
+    const handleNext = async () => {
+
+        const key = questions[currentQuestion].key;
+
+        const updatedAnswers = {
+            ...answers,
+            [key]: currentAnswer,
+        };
+
+        setAnswers(updatedAnswers);
+
+        if (currentQuestion < questions.length - 1) {
+            setCurrentQuestion(currentQuestion + 1);
+            setCurrentAnswer("");
+            return;
+        }
+
+        await generateTrack(updatedAnswers);
+    };
+
+    const handleUpdate = () => {
+        setGeneratedTrack(null);
+
+        setAnswers({
+            goal: "",
+            concern: "",
+            debt: "",
+            saving: "",
+        });
+
+        setCurrentQuestion(0);
+        setCurrentAnswer("");
+    };
+
 
 
     return(

@@ -81,13 +81,22 @@ Use South African context throughout — mention TFSA, SARS, rand amounts, JSE w
                 "anthropic-version": "2023-06-01"
             },
             body: JSON.stringify({
-                model: "claude-opus-4-5",
+                model: "claude-opus-4",
                 max_tokens: 1000,
                 messages: [
                     { role: "user", content: prompt }
                 ]
             })
         });
+
+        if (!response.ok) {
+            const errorData = await response.text();
+            console.error("Anthropic error:", errorData);
+
+            return res.status(response.status).json({
+            error: "Anthropic request failed"
+            });
+        }
 
         const data = await response.json();
         const trackText = data.content[0].text;
