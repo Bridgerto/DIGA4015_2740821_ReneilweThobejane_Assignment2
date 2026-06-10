@@ -4,7 +4,7 @@ import React, { useState } from "react";
 // STYLING
 import "../cssFiles/TrackCard.css";
 
-export default function TrackCard({ title, description, prioritises, avoids, tradeoffs, milestones }) {
+export default function TrackCard({ title, image, description, prioritises, avoids, tradeoffs, milestones }) {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -12,7 +12,13 @@ export default function TrackCard({ title, description, prioritises, avoids, tra
         <>
             {/* TRACK CARD */}
             <div className="track-card" onClick={() => setIsOpen(true)}>
-                <div className="track-card-image-placeholder" />
+                <img 
+                    src={image} 
+                    alt={title} 
+                    className="track-card-image"
+                />
+
+
                 <h3 className="track-card-title">{title}</h3>
                 <p className="track-card-description">{description}</p>
             </div>

@@ -9,12 +9,18 @@ import TrackCard from "../components/TrackCard";
 // ICONS
 import emptyAvatar from "../assets/avatars/emptyAvatar.png";
 
+// IMAGES
+import propertyImage from "../assets/images/strategy-track-first-property.jpg"; 
+import lifestyleImage from "../assets/images/strategy-track-balanced-lifestyle.png"; 
+import debtImage from "../assets/images/strategy-track-debt-demolisher.jpg";
+
 // STYLING
 import "../cssFiles/StrategyTracks.css";
 
 const tracks = [
     {
         title: "First Property Path",
+        image: propertyImage,
         description: "This track is for a user whose primary long-term goal is owning property. They are disciplined enough to delay lifestyle upgrades in exchange for building toward a deposit to eventually own a house.",
         prioritises: "Over the period of 5 years it will help clear high-interest debt first, building an emergency fund, then aggressively saving toward a property deposit. Lifestyle inflation is actively discouraged throughout.",
         avoids: "Unnecessary credit, large discretionary purchases, and investment vehicles that lock away money needed for a deposit.",
@@ -28,6 +34,7 @@ const tracks = [
     },
     {
         title: "Balanced Lifestyle & Investing",
+        image: lifestyleImage,
         description: "This track is for a user who wants to build wealth without completely sacrificing their current quality of life. They have stable income, manageable or no debt, and want a plan that allows them to invest while still living well.",
         prioritises: "Building an emergency fund, opening a TFSA, beginning a diversified investment portfolio, and maintaining a sustainable lifestyle budget that doesn't feel restrictive.",
         avoids: "Extreme frugality, locking all disposable income into savings, and ignoring quality of life entirely.",
@@ -41,6 +48,7 @@ const tracks = [
     },
     {
         title: "Debt Demolisher Path",
+        image: debtImage,
         description: "This track is for a user who is carrying significant debt and needs to prioritise clearing that debt before anything else can meaningfully happen.",
         prioritises: "Aggressive debt repayment above all else. Every available rand after fixed costs and a basic emergency fund goes toward reducing the debt principal as fast as possible.",
         avoids: "New debt of any kind, lifestyle inflation, and premature investing before the debt situation is stabilised.",
@@ -56,7 +64,6 @@ const tracks = [
 ];
 
 export default function StrategyTracks() {
-
     const navigate = useNavigate();
 
     const username = localStorage.getItem("username") || "User";
