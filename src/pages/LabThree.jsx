@@ -223,8 +223,9 @@ export default function LabThree(){
                 {/*WHAT HAPPENS WHEN SIMULATE IS CLICKED*/}
                 {results && (
                     <>
-                        {/* EDUCATIONAL CONTENT */}
-                        <section className="lab-educational">
+                        {/* EXPLAINERY LAYER FEATURE - EDUCATIONAL CONTENT */}
+                        <section className="lab-three-educational">
+                            <h2>Educational Content</h2>
                             <p>
                                 Property transfer duties in South Africa are levied by SARS on
                                 properties above R1,100,000. A property purchased at
@@ -238,13 +239,13 @@ export default function LabThree(){
 
                         
                         {/* PATH CARDS */}
-                        <section className="lab-paths">
-                            <div className="lab-path-card path-a">
-                                <div className="lab-path-header">
+                        <section className="lab-three-paths">
+                            <div className="lab-three-path-card path-a">
+                                <div className="lab-three-path-header">
                                     <h3>PATH A</h3>
                                     <p>BUY THE PROPERTY</p>
                                 </div>
-                                <div className="lab-path-body">
+                                <div className="lab-three-path-body-a">
                                     <p className="lab-path-metric-label">Deposit required</p>
                                     <p className="lab-path-metric-value">R {Math.round(results.deposit).toLocaleString("en-ZA")}</p>
 
@@ -262,12 +263,12 @@ export default function LabThree(){
                                 </div>
                             </div>
 
-                            <div className="lab-path-card path-b">
-                                 <div className="lab-path-header">
+                            <div className="lab-three-path-card path-b">
+                                 <div className="lab-three-path-header">
                                     <h3>PATH B</h3>
                                     <p>CONTINUE RENTING & INVEST</p>
                                 </div>
-                                <div className="lab-path-body">
+                                <div className="lab-three-path-body-b">
                                     <p className="lab-path-metric-label">Total rent paid over {results.years} years</p>
                                     <p className="lab-path-metric-value">R {Math.round(results.totalRentPaid).toLocaleString("en-ZA")}</p>
                                     <p className="lab-path-metric-label">Monthly amount invested</p>
@@ -279,7 +280,7 @@ export default function LabThree(){
                         </section>
 
                         {/* VISUAL BARS */}
-                        <section className="lab-bars">
+                        <section className="lab-three-bars">
                             
                             <div className="lab-bar-row">
                                 <p className="lab-bar-label">Path A Total Cost</p>
@@ -311,9 +312,9 @@ export default function LabThree(){
                         </section>
 
                         {/* LAB VERDICT */}
-                        <section className="lab-verdict">
-                            <p className="lab-verdict-title">LAB VERDICT</p>
-                            <p className="lab-verdict-text">
+                        <section className="lab-three-verdict">
+                            <p className="lab-three-verdict-title">LAB VERDICT</p>
+                            <p className="lab-three-verdict-text">
                                 Buying the property costs
                                 R {Math.round(results.pathACost).toLocaleString("en-ZA")} over {results.years} years
                                 in bond repayments, rates and levies. Your property will be worth

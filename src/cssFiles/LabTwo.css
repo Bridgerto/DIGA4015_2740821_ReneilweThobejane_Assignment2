@@ -16,7 +16,7 @@
 .lab-two-header{
     display: flex;
     align-items: center;
-    gap: 8.5rem;
+    gap: 6.8rem;
     margin: 50px 0 50px;
 }
 
@@ -39,6 +39,12 @@
     color: #F1AA9B;
     margin: 4px 0 0;
     text-align: center;
+}
+
+.lab-two-title{
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-left: 0px; 
 }
 
 /* INFO TAB */
@@ -106,4 +112,194 @@
 .lab-two-slider {
     width: 100%;
     accent-color: #312C51;
+}
+
+.lab-two-bottom-row{
+    margin-left:40%;
+}
+
+/*WHEN SIMULATE IS CLICKED*/
+
+/*EDUCATIONAL CONTENT*/
+.lab-two-educational {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 50px 0;
+}
+
+.lab-two-educational p {
+    color: #c9c4e0;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* PATH CARDS */
+.lab-two-paths {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 0 20px 0 35px;
+}
+
+.lab-two-path-card {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.lab-two-path-header {
+    padding: 16px;
+    text-align: center;
+}
+
+.lab-two-path-header h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+}
+
+.lab-two-path-header p {
+    font-size: 0.75rem;
+    margin: 4px 0 0;
+    color: #ffffff;
+    letter-spacing: 0.06em;
+}
+
+
+.path-a .lab-two-path-header {
+    background-color: #312C51;
+    border: 2px solid #7b70c3;
+    border-bottom: none;
+    border-radius: 17px 17px 0 0;
+    width: 438px;
+}
+
+.lab-two-path-body-a {
+    height: 300px; 
+    width: 430px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #c9c4e0;
+    border: 2px solid #7b70c3;
+    border-top: none;
+    border-radius: 0 0 17px 17px;
+}
+
+
+.path-b .lab-two-path-header {
+    background-color: #312C51;
+    border: 4px solid #F0C38E;
+    border-bottom: none;
+    border-radius: 17px 17px 0 0;
+    width: 438px;
+}
+
+.lab-two-path-body-b {
+    height: 300px;
+    width: 430px;
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f5f4fb;
+    border: 4px solid #F0C38E;
+    border-top: none;
+    border-radius: 0 0 17px 17px ;
+}
+
+
+.lab-path-metric-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #312C51;
+    margin: 0;
+}
+
+.lab-path-metric-value {
+    font-size: 1rem;
+    color: #444;
+    margin: 0 0 8px;
+}
+
+/* VISUAL BARS */
+.lab-two-bars {
+    background-color: #fcfcfc6a;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px 0 10px 0;
+}
+
+.lab-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.lab-bar-label {
+    font-size: 0.85rem;
+    color: #312C51;
+    font-weight: 500;
+    min-width: 140px;
+    margin: 0;
+}
+
+.lab-bar-track {
+    flex: 1;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    height: 28px;
+    overflow: hidden;
+}
+
+.lab-bar-fill {
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #ffffff;
+    transition: width 0.6s ease;
+}
+
+.path-a-fill {
+    background-color: #48426D;
+}
+
+.path-b-fill {
+    background-color: #F0C38E;
+    color: #312C51;
+}
+
+/* LAB VERDICT */
+.lab-two-verdict {
+    background-color:#F0C38E;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.lab-two-verdict-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #312C51;
+    letter-spacing: 0.08em;
+    margin: 0 0 10px;
+}
+
+.lab-two-verdict-text {
+    font-size: 1.0rem;
+    color: #312C51;
+    line-height: 1.7;
+    margin: 0;
 }

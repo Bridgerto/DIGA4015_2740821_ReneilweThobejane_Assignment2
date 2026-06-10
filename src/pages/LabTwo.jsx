@@ -179,14 +179,14 @@ export default function LabOne(){
                         </section>
 
                         {/* PATH CARDS */}
-                        <section className="lab-paths">
+                        <section className="lab-two-paths">
 
-                              <div className="lab-path-card path-a">
-                                <div className="lab-path-header">
+                              <div className="lab-two-path-card path-a">
+                                <div className="lab-two-path-header">
                                     <h3>PATH A</h3>
                                     <p>MINIMUM REPAYMENT</p>
                                 </div>
-                                <div className="lab-path-body">
+                                <div className="lab-two-path-body-a">
                                     <p className="lab-path-metric-label">Monthly repayment</p>
                                     <p className="lab-path-metric-value">R {currentRepayment.toLocaleString("en-ZA")}</p>
                                     <p className="lab-path-metric-label">Months to debt freedom</p>
@@ -199,12 +199,12 @@ export default function LabOne(){
                             </div>
 
 
-                            <div className="lab-path-card path-b">
-                                <div className="lab-path-header">
+                            <div className="lab-two-path-card path-b">
+                                <div className="lab-two-path-header">
                                     <h3>PATH B</h3>
                                     <p>AGGRESSIVE DEBT PAYOFF</p>
                                 </div>
-                                <div className="lab-path-body">
+                                <div className="lab-two-path-body-b">
                                     <p className="lab-path-metric-label">Monthly repayment</p>
                                     <p className="lab-path-metric-value">R {results.aggressiveRepayment.toLocaleString("en-ZA")}</p>
                                     <p className="lab-path-metric-label">Months to debt freedom</p>
@@ -218,7 +218,7 @@ export default function LabOne(){
                         </section>
 
                         {/*VISUAL BARS*/}
-                        <section className="lab-bars">
+                        <section className="lab-two-bars">
 
                             <div className="lab-bar-row">
                                 <p className="lab-bar-label">Path A Minimum<br/>Repayments</p>
@@ -248,9 +248,9 @@ export default function LabOne(){
                         </section>
 
                         {/* LAB VERDICT */}
-                        <section className="lab-verdict">
-                            <p className="lab-verdict-title">LAB VERDICT</p>
-                            <p className="lab-verdict-text">
+                        <section className="lab-two-verdict">
+                            <p className="lab-two-verdict-title">LAB VERDICT</p>
+                            <p className="lab-two-verdict-text">
                                 Paying your loan at R {currentRepayment.toLocaleString("en-ZA")}/month,
                                 you will be debt-free in <strong>{results.pathA.months} months</strong> and
                                 will pay R {Math.round(results.pathA.totalInterest).toLocaleString("en-ZA")} in

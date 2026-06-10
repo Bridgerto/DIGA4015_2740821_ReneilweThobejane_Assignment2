@@ -229,7 +229,7 @@ export default function LabOne(){
                         </section>
 
                         {/*VISUAL BARS*/}
-                        <section className="lab-bars">
+                        <section className="lab-one-bars">
 
                             <div className="lab-bar-row">
                                 <p className="lab-bar-label">Path A Total Cost</p>
@@ -261,9 +261,9 @@ export default function LabOne(){
                         </section>
 
                         {/* LAB VERDICT */}
-                        <section className="lab-verdict">
-                            <p className="lab-verdict-title">LAB VERDICT</p>
-                            <p className="lab-verdict-text">
+                        <section className="lab-one-verdict">
+                            <p className="lab-one-verdict-title">LAB VERDICT</p>
+                            <p className="lab-one-verdict-text">
                                 Upgrading your car costs you an extra 
                                 R {Math.round(results.pathACost).toLocaleString("en-ZA")} over  
                                 {results.timeHorizon} years. Investing that same amount monthly 
