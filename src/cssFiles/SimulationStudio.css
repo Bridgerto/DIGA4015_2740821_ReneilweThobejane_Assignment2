@@ -10,6 +10,7 @@
     width: 74%;
     float: right;
     margin-right: 1.5%;
+    margin-bottom: 60px;
 }
 
 .simulation-studio-header{
@@ -36,10 +37,11 @@
 }
 
 .lab-img{
-    width: 400px;
-    height: 160px;
-    background-color: blueviolet;
-    border-radius: 20px 0 0 20px
+    width: 250px;
+    height: 180px;
+    border-radius: 20px 0 0 20px;
+    object-fit:cover;
+    flex-shrink: 0;
 }
 
 .lab-info{

@@ -10,6 +10,12 @@ import "../cssFiles/SimulationStudio.css";
 // ICONS
 import emptyAvatar from "../assets/avatars/emptyAvatar.png";
 
+// IMAGES
+import labOneImage from "../assets/images/simulation-studio-lab1.png";
+import labTwoImage from "../assets/images/simulation-studio-lab2.jpg";
+import labThreeImage from "../assets/images/simulation-studio-lab3.jpg";
+
+
 export default function SimulationStudio(){
     const username = localStorage.getItem("username") || "User";
     const avatar = localStorage.getItem("avatar") || emptyAvatar;
@@ -35,7 +41,7 @@ export default function SimulationStudio(){
                 
                 <section className="simulation-studio-container">
                     <Link to="/LabOne" className="lab-item">
-                        <img src="" alt="" className="lab-img"/>
+                        <img src={labOneImage} alt="invest vs car purchase image" className="lab-img"/>
                         <div  className="lab-info">
                             <h2>LAB 1: Car Upgrade VS Invest the Difference</h2>
                             <p>
@@ -49,7 +55,7 @@ export default function SimulationStudio(){
                     </Link>
 
                     <Link to="/LabTwo" className="lab-item">
-                        <img src="" alt=""  className="lab-img"/>
+                        <img src={labTwoImage} alt="debt clearance image"  className="lab-img"/>
                         <div className="lab-info">
                             <h2>LAB 2: Minimum Repayment VS Aggressive Debt Payoff </h2>
                             <p>
@@ -63,7 +69,7 @@ export default function SimulationStudio(){
                     </Link>
 
                     <Link to="/LabThree" className="lab-item">
-                        <img src="" alt="" className="lab-img"/>
+                        <img src={labThreeImage} alt="property purchase image" className="lab-img"/>
                         <div className="lab-info">
                             <h2>LAB 3: Renting VS Buying Property in Johannesburg</h2>
                             <p>

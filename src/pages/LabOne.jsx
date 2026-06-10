@@ -204,7 +204,7 @@ export default function LabOne(){
                                     <h3>PATH A</h3>
                                     <p>UPGRADE CAR</p>
                                 </div>
-                                <div className="lab-one-path-body">
+                                <div className="lab-one-path-body-a">
                                     <p className="lab-one-path-metric-label">Extra monthly cost</p>
                                     <p className="lab-one-path-metric-value">R {results.diff.toLocaleString("en-ZA")}</p>
                                     <p className="lab-one-path-metric-label">Total extra cost over period</p>
@@ -217,7 +217,7 @@ export default function LabOne(){
                                     <h3>PATH B</h3>
                                     <p>KEEP OLD CAR, INVEST DIFFERENCE</p>
                                 </div>
-                                <div className="lab-one-path-body">
+                                <div className="lab-one-path-body-b">
                                     <p className="lab-one-path-metric-label">Monthly investment</p>
                                     <p className="lab-one-path-metric-value">R {results.diff.toLocaleString("en-ZA")}</p>
                                     <p className="lab-one-path-metric-label">Investment value at the end</p>
