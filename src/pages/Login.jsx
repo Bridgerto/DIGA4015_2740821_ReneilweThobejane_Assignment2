@@ -21,9 +21,33 @@ export default function Login(){
     const [password, setPassword] = useState("");
 
     const navigate = useNavigate();
-    function handleEnter() {
-        navigate("/MoneySnapshot");
-    } 
+
+     function handleEnter() {
+
+        // CHECK IF FIELDS ARE FILLED
+        if (!username || !password) {
+            setError("Please enter your username and password.");
+            return;
+        }
+
+        // READ STORED CREDENTIALS FROM LOCALSTORAGE
+        const storedUsername = localStorage.getItem("username");
+        const storedPassword = localStorage.getItem("password");
+
+        // CHECK IF AN ACCOUNT EXISTS AT ALL
+        if (!storedUsername || !storedPassword) {
+            setError("No account found. Please sign up first.");
+            return;
+        }
+
+        // CHECK IF CREDENTIALS MATCH
+        if (username === storedUsername && password === storedPassword) {
+            navigate("/MoneySnapshot");
+        } else {
+            setError("Incorrect username or password. Please try again.");
+        }
+    }
+
 
     return(
         <div className="login-page">
@@ -38,7 +62,7 @@ export default function Login(){
                             type="text"
                             placeholder="Enter your username" 
                             value={username}
-                            onChange={(e) => setUsername(e.target.value)}
+                            onChange={(e) => {setUsername(e.target.value); setError("");}}
                             className= "username-input"
                         />
                 </div>
@@ -50,10 +74,13 @@ export default function Login(){
                         type="password"
                         placeholder="Enter your password" 
                         value={password}
-                        onChange={(e) => setPassword(e.target.value)}
+                        onChange={(e) => {setPassword(e.target.value); setError("");}}
                         className= "password-input"
+
                     />
                 </div>
+
+                {error && <p className="login-error">{error}</p>}
               
                 <button onClick={handleEnter}>ENTER</button>
             </div>

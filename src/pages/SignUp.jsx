@@ -34,10 +34,32 @@ export default function SignUp (){
 
     function handleProceed()
     {
+        // CHECK IF ALL FIELDS ARE FILLED
         if (!username || !password || !grossIncome || !selectedAvatar) 
         {
             setError("Please fill in all fields and select a profile icon.");
             return;  
+        }
+
+        // CHECK IF AN ACCOUNT ALREADY EXISTS WITH THIS USERNAME
+        const storedUsername = localStorage.getItem("username");
+        const storedPassword = localStorage.getItem("password");
+
+        if (storedUsername && storedPassword) 
+        {
+            // ACCOUNT EXISTS — check if it matches
+            if (username === storedUsername && password === storedPassword) 
+            {
+                // SAME CREDENTIALS — they already have an account, send to login
+                setError("An account with these details already exists. Please login instead.");
+                return;
+            } 
+            else if (username === storedUsername) 
+            {
+                // SAME USERNAME, DIFFERENT PASSWORD
+                setError("This username is already taken. Please choose a different username.");
+                return;
+            }
         }
 
         // Save this information to localStorage
@@ -57,14 +79,14 @@ export default function SignUp (){
         {/*LEFT SIDE - form area*/}
         <div className="signup-left"> 
             <h1 className="signup-title">Welcome, time to create your account</h1>
-            <h2 className="progress-tracker"> Step 1 of 3</h2>   {/*We will came back here and improve the UI for final submission*/}
+            <h2 className="progress-tracker"> Step 1 of 3</h2>   
 
             <label>Username</label>
                 <input 
                    type="text"
                    placeholder="Enter your username"
                    value={username}
-                   onChange={(e) => setUsername(e.target.value)}
+                   onChange={(e) => {setUsername(e.target.value); setError("");}}
                    className="signup-input" 
                 />
        
@@ -73,7 +95,7 @@ export default function SignUp (){
                    type="password"
                    placeholder="Enter your password"
                    value={password}
-                   onChange={(e) => setPassword(e.target.value)}
+                   onChange={(e) => {setPassword(e.target.value); setError("");}}
                    className="signup-input"
                 />
 
@@ -82,7 +104,7 @@ export default function SignUp (){
                    type= "number"
                    placeholder="Example: 540 000"
                    value={grossIncome}
-                   onChange={(e) => setGrossIncome(e.target.value)}
+                   onChange={(e) => {setGrossIncome(e.target.value); setError("");}}
                    className="signup-input"
                 />
 
