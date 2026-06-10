@@ -14,3 +14,21 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+# When running Build Your own Track builder in PersonalisedTrackBuilder.jsx
+
+1. Clone the repository
+
+2. Run npm install
+
+3. Create a .env file in the project root
+
+4. Add: ANTHROPIC_API_KEY=YOUR_API_KEY
+
+5. Start the frontend:
+
+npm run dev
+
+6. Start the backend:
+
+node server/server.js

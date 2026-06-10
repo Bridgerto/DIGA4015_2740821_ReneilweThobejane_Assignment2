@@ -4,6 +4,10 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+if (!process.env.ANTHROPIC_API_KEY) {
+    console.error("Missing ANTHROPIC_API_KEY in .env file");
+}
+
 
 const app = express();
 app.use(cors());
