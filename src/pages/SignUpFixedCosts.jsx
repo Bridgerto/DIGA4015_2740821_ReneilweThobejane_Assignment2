@@ -62,67 +62,74 @@ export default function SignUpFixedCosts() {
     }
 
     return (
-        <div>
-            <h1>Your Fixed Costs</h1>
-            <p>Step 2 of 3</p>
-            <p>Add your known recurring monthly expenses below.</p>
+        <div className="sign-up-fixed-costs-page">
 
-            {expenses.map((expense, index) => (
-                <div key={index} className="expense-block">
-                <p>Expense {index + 1}</p>
+            <div className="sufc-header">
+                <h1 className="sufc-title">Your Fixed Costs</h1>
+                <h2 className="sufc-progress-tracker">Step 2 of 3</h2>
+            </div>
 
-                    
-                <label>Category</label>
-                <select
-                    value={expense.category}
-                    onChange={(e) => handleChange(index, "category", e.target.value)}
-                >
-                    <option value="">Select a category</option>
-                        {categories.map((cat) => (
-                        <option key={cat} value={cat}>{cat}</option>
-                    ))}
-                </select>
+            <div className="sufc-content">
+                <p>Add your known recurring monthly expenses below.</p>
+            </div>
 
-                <label>Amount (R)</label>
-                <input
-                    type="number"
-                    placeholder="e.g. 9000"
-                    value={expense.amount}
-                    onChange={(e) => handleChange(index, "amount", e.target.value)}
-                />
+                {expenses.map((expense, index) => (
+                    <div key={index} className="expense-block">
+                        <p>Expense {index + 1}</p>
 
-                <label>Merchant / Payee Name</label>
-                <input
-                    type="text"
-                    placeholder="e.g. Fourways Properties"
-                    value={expense.merchant}
-                    onChange={(e) => handleChange(index, "merchant", e.target.value)}
-                />
+                        <div className="sufc-input">
+                            <label>Category</label>
+                            <select
+                                value={expense.category}
+                                onChange={(e) => handleChange(index, "category", e.target.value)}
+                            >
+                                <option value="" >Select a category</option>
+                                    {categories.map((cat) => (
+                                    <option key={cat} value={cat}>{cat}</option>
+                                ))}
+                            </select>
 
-                <label>Payment Day of Month</label>
-                <select
-                    value={expense.paymentDay}
-                    onChange={(e) => handleChange(index, "paymentDay", e.target.value)}
-                >
-                    <option value="">Select a day</option>
-                    {days.map((day) => (
-                            <option key={day} value={day}>{day}</option>
-                        ))}
-                </select>
+                            <label>Amount (R)</label>
+                            <input
+                                type="number"
+                                placeholder="e.g. 9000"
+                                value={expense.amount}
+                                onChange={(e) => handleChange(index, "amount", e.target.value)}
+                            />
 
-                {expenses.length > 1 && (
-                    <button onClick={() => handleRemoveExpense(index)}>
-                            Remove
-                    </button>
-                )}
-                </div>
-            ))}
+                            <label>Merchant / Payee Name</label>
+                            <input
+                                type="text"
+                                placeholder="e.g. Fourways Properties"
+                                value={expense.merchant}
+                                onChange={(e) => handleChange(index, "merchant", e.target.value)}
+                            />
 
-            <button onClick={handleAddExpense}>+ Add Another Expense</button>
+                            <label>Payment Day of Month</label>
+                            <select
+                                value={expense.paymentDay}
+                                onChange={(e) => handleChange(index, "paymentDay", e.target.value)}
+                            >
+                                <option value="" >Select a day</option>
+                                {days.map((day) => (
+                                        <option key={day} value={day}>{day}</option>
+                                    ))}
+                            </select>
+                        </div>
+
+                        {expenses.length > 1 && (
+                            <button onClick={() => handleRemoveExpense(index)} className="sufc-remove-expense">
+                                    REMOVE EXPENSE
+                            </button>
+                        )}
+                    </div>        
+                ))}
+
+            <button onClick={handleAddExpense} className="sufc-add-expense">+ ADD ANOTHER EXPENSE</button>
 
             {error && <p className="error-text">{error}</p>}
 
-            <button onClick={handleProceed}>Proceed</button>
+            <button onClick={handleProceed} className="sufc-proceed-btn">PROCEED TO STEP 3</button>
         </div>
     );
 }

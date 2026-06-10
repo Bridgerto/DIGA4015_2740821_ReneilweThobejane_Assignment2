@@ -1,15 +1,136 @@
-/*the look of each expense block*/
-.expense-block{
-    border: "1px solid #ccc";
-    border-radius: "8px";
-    padding: "16px";
-    margin-bottom: "16px"             
+.sign-up-fixed-costs-page{
+    background-color: #48426D;
+    min-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
 }
 
-.expense-block {
-    background-color: red;
+.sufc-header{
+    background-color: #312C51;
+    margin: 15px 20px 10px 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.sufc-title{
+    color: #48426D;
+    font-size: 5rem;
+    margin-left: 29%;
+}
+
+.sufc-progress-tracker{
+    color: #F1AA9B;
+    font-size: 1.7rem;
+    margin-left: 44%;
+}
+
+.sufc-content{
+    margin: 20px 0 0 37%;
+    font-size: 1.1rem;
+    color:#F0C38E;
+}
+
+.expense-block{
+    display: flex;
+    flex-direction: column;
+    background-color: #c9c4e079;
+    margin: 0 30px 30px 23%;
+    padding: 30px 30px 60px 35px;
+    width: 50%;
+    border-radius: 20px;
+    gap: 15px;
+}
+
+.expense-block p{
+    margin-left: 80%;
+    color: #f2f0fd;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sufc-input{
+    margin-left:10px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.sufc-input input, .sufc-input select{
+    min-height: 25px;
+    border-radius: 7px;
+    background-color: #c9c4e0;
+
+}
+
+.sufc-input input:focus {
+    outline: 2px solid #F0C38E;
+    background-color: #f2f0fd;
+
+}
+
+.sufc-input select:focus {
+    outline: 2px solid #F0C38E;
+    background-color: #f2f0fd;
+
+}
+
+.sufc-remove-expense{
+    background-color: #48426D;
+    color:#f2f0fd;
+    border: 2x color #756d96;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    letter-spacing: 0.05em;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.sufc-remove-expense:hover{
+    background-color: #c9c4e0;
+    color: #312C51;
+}
+
+.sufc-add-expense{
+    background-color: #756d96;
+    color: #F0C38E;
+    border: 2x color #312C51;
+    cursor: pointer;
+    width: 17%;
+    padding: 10px;
+    border-radius: 8px;
+    letter-spacing: 0.05em;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 15px 0px 0px 42%;
+}
+
+.sufc-add-expense:hover{
+    background-color: #c9c4e0;
+    color: #312C51;
 }
 
 .error-text{
     color: red;
+}
+
+.sufc-proceed-btn{
+    background-color: #312C51;
+    color: #F0C38E;
+    border: 2x color #312C51;
+    cursor: pointer;
+    width: 17%;
+    padding: 10px;
+    border-radius: 8px;
+    letter-spacing: 0.05em;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 120px 0 50px 42%;
+}
+
+.sufc-proceed-btn:hover{
+    background-color: #F0C38E;
+    color: #312C51;
 }

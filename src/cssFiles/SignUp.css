@@ -50,24 +50,23 @@
 
 
 .signup-button {
-    padding: 10px;
-    border-radius: 8px;
     background-color: #312C51;
     color: #F0C38E;
+    border: 2x color #312C51;
+    cursor: pointer;
+    width: 40%;
+    padding: 10px;
+    border-radius: 8px;
+    letter-spacing: 0.05em;
+
     font-size: 13px;
     font-weight: bold;
-    cursor: pointer;
-    border: 2x color #312C51;
-    width: 40%;
-    letter-spacing: 0.05em;
 }
 
 
 .signup-button:hover {
     background-color: #F0C38E;
     color: #312C51;
-
-
 }
 
 
